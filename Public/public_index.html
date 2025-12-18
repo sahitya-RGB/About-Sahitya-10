@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sahitya Bhakta - Tech Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  background: #020b02;
+  color: #00ff66;
+  font-family: "Courier New", monospace;
+}
+
+/* INTRO */
+#intro {
+  position: fixed;
+  inset: 0;
+  background: #020b02;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#intro h1 {
+  font-size: 22px;
+  text-shadow: 0 0 10px #00ff66;
+}
+
+.loader {
+  width: 70%;
+  height: 6px;
+  background: #003b1a;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.loader span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #00ff66;
+  animation: load 3s forwards;
+}
+
+@keyframes load {
+  to { width: 100%; }
+}
+
+/* MAIN */
+#main {
+  display: none;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(0,255,100,0.05);
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 20px rgba(0,255,100,0.3);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #00ff66;
+}
+
+.skill {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,255,100,0.2);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: transparent;
+  border: 2px solid #00ff66;
+  color: #00ff66;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ff66;
+  color: #020b02;
+}
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+  <h1>Welcome to the Introduction<br>of Sahitya Bhakta</h1>
+  <div class="loader"><span></span></div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+  <div class="card">
+    <div class="title">⚡💛 ABOUT • ME 💛⚡</div>
+    🪪 Name » Sahitya Bhakta<br>
+    🎂 Birthday » 27 November 🎉<br>
+    🌏 Nation » India 🇮🇳<br>
+    👀 Age » Mat pucho 😏<br><br>
+
+    💻🔥 Tech Lover | Creator | Learner<br><br>
+
+    Turning ideas into reality with tech + creativity<br>
+    Always learning • Always building
+  </div>
+
+  <div class="card">
+    <div class="title">My Skills</div>
+
+    <div class="skill">👨‍💻 Coding & Programming</div>
+    <div class="skill">🌐 Website Developer</div>
+    <div class="skill">🎨 Graphic Designer</div>
+    <div class="skill">🎬 Video Editor</div>
+    <div class="skill">🤖 Bot Developer</div>
+    <div class="skill">📊 Panel / Dashboard Maker</div>
+    <div class="skill">🚀 Automation & Tech Projects</div>
+    <div class="skill">🎮 Gamer • Free Fire Max</div>
+    <div class="skill">🐧 Termux / Linux Learner</div>
+    <div class="skill">💳 Carding</div>
+    <div class"skill">👨‍💻Telegram Bot Devloper</div> 
+    
+    <div class="skill">🎮 Discord Server Mod</div>
+
+    <button onclick="contact()">📩 Contact Me</button>
+  </div>
+
+</div>
+
+<script>
+setTimeout(() => {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("main").style.display = "block";
+}, 3200);
+
+function contact() {
+  window.open("https://t.me/ig_sahitya", "_blank");
+}
+</script>
+
+</body>
+</html>
